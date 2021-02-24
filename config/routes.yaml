@@ -1,3 +1,28 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+pharmacie_index:
+  path: /pharma
+  controller: App\Controller\PharmacieController::index
+  methods: GET
+
+pharmacie_post:
+  path: /pharma
+  controller: App\Controller\PharmacieController::post
+  methods: POST
+
+pharmacie_update:
+  path: /pharma/{id}
+  controller: App\Controller\PharmacieController::update
+  methods: PUT
+
+pharmacie_delete:
+  path: /pharma/{id}
+  controller: App\Controller\PharmacieController::delete
+  methods: DELETE
+
+pharmacie_garde:
+  path: /pharma-garde
+  controller: App\Controller\PharmacieController::garde
+  methods: GET
